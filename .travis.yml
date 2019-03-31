@@ -17,6 +17,4 @@ cache:
 script:
     - vendor/bin/phpcs --config-set installed_paths vendor/magento/marketplace-eqp/
     - vendor/bin/phpcs --standard=vendor/magento/marketplace-eqp/MEQP2 --severity=9 .
-    - vendor/bin/phpcpd --exclude Test --exclude vendor --progress .
-    - vendor/bin/phpmd --suffixes php,phtml . text cleancode,codesize,controversial,design,naming,unusedcode
     - vendor/bin/phpunit -c Resources/tests/unit/phpunit.xml
