@@ -19,7 +19,8 @@
         "magento/framework": "102.*"
     },
     "require-dev": {
-        "magento/magento-coding-standard": "~1.0.0"
+        "magento/magento-coding-standard": "~1.0.0",
+	"phpunit/phpunit": "^6.5"
     },
     "autoload": {
         "psr-4": {
