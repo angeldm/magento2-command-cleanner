@@ -1,0 +1,21 @@
+{
+    "name": "angeldm/magento2-command-cleanner",
+    "description": "",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "authors": [{
+        "email": "angeldm@gmail.com",
+        "name": "Angeldm"
+    }],
+    "require": {
+        "magento/framework": "102.*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Angeldm\\Cleanner\\": ""
+        }
+    }
+}
