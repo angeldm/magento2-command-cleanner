@@ -5,6 +5,7 @@
 
     <testsuite name="ElasticSuite Unit Tests">
         <directory suffix="Test.php">../../../Test/Unit</directory>
+
     </testsuite>
 
     <php>
