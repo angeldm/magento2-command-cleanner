@@ -19,7 +19,7 @@
         "magento/framework": "102.*"
     },
     "require-dev": {
-        "magento/marketplace-eqp": "~2.0.0",
+        "magento/marketplace-eqp": "~2.0.0"
     },
     "autoload": {
         "psr-4": {
