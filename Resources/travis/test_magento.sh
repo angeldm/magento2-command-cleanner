@@ -29,7 +29,7 @@ composer create-project --repository-url=https://repo.magento.com magento/projec
 cd "magento"
 
 echo "==> Require module from: ${REPOSITORY}"
-omposer config repositories.module vcs ${REPOSITORY}
+composer config repositories.module vcs ${REPOSITORY}
 
 # Require the extension to make it usable (autoloading)
 echo "==> Requiring $MODULE_NAME from the $TRAVIS_BRANCH-dev branch"
