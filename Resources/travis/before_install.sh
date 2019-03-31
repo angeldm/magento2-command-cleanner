@@ -10,4 +10,5 @@ else
 fi
 
 echo "==> Require magento/magento2-base package (Version $VERSION) ..."
-composer require magento/framework:102.0.1 && composer install --no-update -q
+#composer require magento/framework:102.0.1 && composer install --quiet
+composer require magento/magento2-base $VERSION --no-update -q
