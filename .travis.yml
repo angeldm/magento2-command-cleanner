@@ -35,7 +35,7 @@ before_install:
 install:
   - sh -c "if [ '$TEST_SUITE' = 'js' ]; then ./Travis/tasks/deps/install-node.sh; fi"
   - sh -c "if [ '$TEST_SUITE' = 'js' ]; then ./Travis/tasks/deps/install-grunt-cli.sh; fi"
-  - sh -c "if [ '$TEST_SUITE' = 'static' ]; then composer require magento/framework:~100.1.0 && composer install; fi"
+  - sh -c "if [ '$TEST_SUITE' = 'static' ]; then composer require magento/framework:~100.2.0 && composer install; fi"
   - sh -c "if [ '$TEST_SUITE' = 'static' ]; then ./Travis/tasks/deps/install-phpcs.sh; fi"
   - sh -c "if [ '$TEST_SUITE' = 'static' ]; then ./Travis/tasks/deps/install-phpmd.sh; fi"
   - sh -c "if [ '$TEST_SUITE' = 'static' ]; then ./Travis/tasks/deps/install-phpcpd.sh; fi"
