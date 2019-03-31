@@ -9,6 +9,7 @@
     bootstrap="Resources/tests/unit/framework/bootstrap.php">
     <testsuite name="Magento_Unit_Tests_App_Code">
         <directory suffix="Test.php">Test/Unit</directory>
+        <exclude>Resources</exclude>
     </testsuite>
     <php>
         <ini name="date.timezone" value="America/Los_Angeles"/>
