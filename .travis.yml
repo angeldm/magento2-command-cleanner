@@ -7,7 +7,7 @@ php:
 install: [
   "mkdir -p app/etc var",
   "echo \"{\\\"http-basic\\\":{\\\"repo.magento.com\\\":{\\\"username\\\":\\\"${MAGENTO_USERNAME}\\\",\\\"password\\\":\\\"${MAGENTO_PASSWORD}\\\"}}}\" > auth.json",
-  "composer install --prefer-dist"
+  "composer install --prefer-dist --quiet"
   ]
 
 cache:
@@ -16,5 +16,5 @@ cache:
 
 script:
     - vendor/bin/phpcs --config-set installed_paths vendor/magento/magento-coding-standard
-    - vendor/bin/phpcs --standard=Magento2 --severity=9  --ignore=vendor,pub -v .
-    - vendor/bin/phpunit -c phpunit.xml 
+    - vendor/bin/phpcs --standard=Magento2 --severity=9  --ignore=vendor,pub,Resources -v .
+    - vendor/bin/phpunit -c phpunit.xml
