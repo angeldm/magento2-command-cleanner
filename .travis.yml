@@ -16,5 +16,5 @@ cache:
 
 script:
     - vendor/bin/phpcs --config-set installed_paths vendor/magento/magento-coding-standard
-    - vendor/bin/phpcs --standard=Magento2 --severity=9 .
+    - vendor/bin/phpcs --standard=Magento2 --severity=9  --ignore=vendor,pub -v .
     - vendor/bin/phpunit -c Resources/tests/unit/phpunit.xml
