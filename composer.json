@@ -1,7 +1,7 @@
 {
     "name": "angeldm/magento2-command-cleanner",
     "type": "magento2-module",
-    "description": "agento 2 module to clean directories pub and var",
+    "description": "magento 2 module to clean directories pub and var",
     "keywords": [
         "composer-installer",
         "magento",
