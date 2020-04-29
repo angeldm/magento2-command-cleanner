@@ -10,18 +10,20 @@
     ],
     "homepage": "https://github.com/angeldm/magento2-command-cleanner",
     "license": "OSL-3.0",
-    "authors": [{
-        "name": "Àngel Díaz",
-        "email": "angeldm@gmail.com"
-    }],
+    "authors": [
+        {
+            "name": "Àngel Díaz",
+            "email": "angeldm@gmail.com"
+        }
+    ],
     "require": {
-        "php": ">=7.1.0",
+        "php": "~7.1.3 || ~7.2.0 || ~7.3.0",
         "magento/framework": "102.*"
     },
     "require-dev": {
+        "allure-framework/allure-phpunit": "~1.2.0",
         "magento/magento-coding-standard": "~1.0.0",
-        "phpunit/phpunit": "^6.5",
-        "allure-framework/allure-phpunit": "~1.2.0"
+        "phpunit/phpunit": "^6.5"
     },
     "autoload": {
         "psr-4": {
@@ -31,8 +33,10 @@
             "registration.php"
         ]
     },
-    "repositories": [{
-        "type": "composer",
-        "url": "https://repo.magento.com/"
-    }]
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    ]
 }
